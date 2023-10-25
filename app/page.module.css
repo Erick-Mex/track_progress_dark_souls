@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Darksouls";
+    src: url(../public/OptimusPrinceps.woff2);
+}
+
+.header_menu {
+    font-family: 'Darksouls';
+    font-weight: normal;
+}
