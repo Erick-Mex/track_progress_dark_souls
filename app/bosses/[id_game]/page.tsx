@@ -1,12 +1,19 @@
+import { Data, Example } from "@/app/types/Data";
+import { promises as fs } from "fs";
+
+
+
 interface pageProps {
-    params: { id_game: string }
+  params: { id_game: string };
 }
+export default async function BossesList({ params }: pageProps) {
 
+  const file = await fs.readFile(process.cwd() + "/data/db.json", "utf8");
+  const data: Data = JSON.parse(file);
 
-export default function BossesList({ params }: pageProps) {
-    const id = params.id_game
-
-    return ( 
-        <h1>{id}</h1>
-    )
+  return (
+    <>
+      <p>asldkj</p>
+    </>
+  );
 }

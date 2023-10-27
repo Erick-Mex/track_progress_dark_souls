@@ -1,4 +1,6 @@
+'use client'
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import style from "./page.module.css";
 
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
@@ -50,9 +52,9 @@ export default function Home() {
         DARK SOULS BOSSES LIST
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-8 last:mb-4">
-        <AccessButton image_src={darksouls_1} />
-        <AccessButton image_src={darksouls_2} />
-        <AccessButton image_src={darksouls_3} />
+        <Link href="/bosses/dark-souls-1"><AccessButton image_src={darksouls_1} /></Link>
+        <Link href="/bosses/dark-souls-2"><AccessButton image_src={darksouls_2} /></Link>
+        <Link href="/bosses/dark-souls-3"><AccessButton image_src={darksouls_3} /></Link>
       </div>
     </main>
   );
