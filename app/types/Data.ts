@@ -40,10 +40,3 @@ export interface DarkSouls3_Dlc {
     ariandel:      BossInfo[];
     "ringed-city": BossInfo[];
 }
-
-type DLC = DarkSouls1_Dlc | DarkSouls2_Dlc | DarkSouls3_Dlc;
-
-export interface Example {
-    "no-dlc": BossInfo[];
-    dlc: DLC;
-}

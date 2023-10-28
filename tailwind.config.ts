@@ -9,8 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-      },
+      gridTemplateColumns: {
+        'autofill': 'repeat(auto-fill, 15rem)',
+        'full': '100%'
+      }
     },
   },
   plugins: [
